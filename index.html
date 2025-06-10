@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sachin Kharat | Python + Django Developer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #2b2d42, #3f51b5);
+            color: white;
+            padding: 10rem 1rem 6rem;
+            text-align: center;
+            position: relative;
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+        }
+
+        header .typed-text {
+            font-size: 1.8rem;
+            color: #ffd166;
+            height: 40px;
+            margin-bottom: 1.5rem;
+        }
+
+        .container {
+            padding: 2rem;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .section {
+            margin-bottom: 2rem;
+        }
+
+        .section h2 {
+            border-left: 6px solid #ffd166;
+            padding-left: 1rem;
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+            color: #ffd166;
+        }
+
+        .skills ul,
+        .projects ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .skills li,
+        .projects li {
+            background: #1f1f1f;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .projects iframe {
+            width: 100%;
+            height: 300px;
+            margin-top: 10px;
+            border-radius: 10px;
+        }
+
+        .download-resume {
+            text-align: center;
+            margin: 2rem 0;
+        }
+
+        .download-resume a {
+            background-color: #2b2d42;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+
+        .download-resume a:hover {
+            background-color: #3f51b5;
+        }
+
+        footer {
+            background: #2b2d42;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        a {
+            color: #ffd166;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="home">
+        <h1>Sachin Kharat</h1>
+        <div class="typed-text" id="typed"></div>
+        <section class="section bio">
+            <p>I’m Sachin Kharat, a passionate Python and Django developer with a strong foundation in backend
+                development and web application building. With hands-on experience  in PHP and full-stack projects, I
+                love crafting clean, scalable, and real-world tech solutions.</p>
+        </section>
+        <section class="download-resume">
+            <a href="Resume.pdf" download>Download Resume</a>
+        </section>
+    </header>
+
+    <div class="container">
+        <section class="section skills" id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Python</li>
+                <li>Django</li>
+                <li>HTML, CSS, JavaScript</li>
+                <li>PHP</li>
+                <li>MySQL</li>
+            </ul>
+        </section>
+
+        <section class="section projects" id="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li>
+                    <strong>Screen Recorder in Python</strong><br />
+                    <em>This project captures screen activities using Python libraries like PyAutoGUI and OpenCV,
+                        records them in real-time, and saves them as high-quality videos. Useful for tutorials, demos,
+                        and presentations.</em><br /> 
+                    GitHub: <a href="https://github.com/SachinKharat-Developer/Screen-Recorder.git">https://github.com/SachinKharat-Developer/Screen-Recorder</a><br />
+                    Demo (Video) :
+                    <iframe src="https://www.youtube.com/embed/NAeHGVL_3sM" frameborder="0" allowfullscreen></iframe>
+                </li>
+                <li>
+                    <strong>Electronic Store (Full Stack)</strong><br />
+                    <em>A complete e-commerce website built using PHP, MySQL, HTML, CSS, and JavaScript. It includes
+                        features like user authentication, shopping cart, checkout system, admin panel for managing
+                        products and orders, and payment gateway integration.</em><br />
+                    GitHub: <a href="https://github.com/SachinKharat-Developer/Electronic_Store_Website-With-Backend-.git">https://github.com/SachinKharat-Developer/Electronic_Store_Website-With-Backend-.git</a><br />
+                    Demo (Video) :
+                    <iframe src="https://www.youtube.com/embed/2Qb8GOYAL0Q" frameborder="0" allowfullscreen></iframe>
+                </li>
+            </ul>
+        </section>
+
+        <section class="section contact" id="contact">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:kharatsukmar@gmail.com">kharatsukmar@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/sachinkharat53/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">https://www.linkedin.com/in/sachinkharat53</a></p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Sachin Kharat. All rights reserved.</p>
+    </footer>
+
+    <script>
+        var typed = new Typed("#typed", {
+            strings: [
+                "Python + Django Developer",
+                "Web Application Builder",
+                "Full Stack Enthusiast",
+                "Problem Solver"
+            ],
+            typeSpeed: 50,
+            backSpeed: 30,
+            loop: true
+        });
+    </script>
+</body>
+
+</html>
